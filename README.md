@@ -1,7 +1,7 @@
 # CS-Study
 
 ## RULE
-1. 화 / 금 16:00 모임
+1. 화 / 금 16:30 모임
 2. 3인 1주제 선택 (https://github.com/junh0328/prepare_frontend_interview/tree/main)
    - 주제: CS > JavaScript > React > 자료구조 > HTML/CSS
    - 주제 안의 순서는 랜덤

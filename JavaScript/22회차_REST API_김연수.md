@@ -11,7 +11,7 @@
 
 ### REST API의 구성
 
-REST API는 `자원, 행위, 표현`의 3가지 요소로 구성된다.
+REST API는 **`자원, 행위, 표현`**의 3가지 요소로 구성된다.
 
 REST는 자체 표현 구조로 구성되어 REST API만으로 HTTP 요청의 내용을 이해할 수 있다.
 
@@ -199,6 +199,15 @@ GET /members/100?username=inpa&height=200
   | 403       | Forbidden   | 콘텐츠에 접근할 권한을 가지고 있지 않음을 의미               |
   | 404       | Not Found   | 요청받은 리소스를 찾을 수 없음을 의미                        |
 
+  > **💡 401과 403의 차이**
+  >
+  > - 401(Unauthorized)
+  >   - 상태: 클라이언트가 인증되지 않았거나, 유효한 인증 정보가 부족하여 요청이 거부됨
+  >   - 예시: 사용자가 로그인되지 않은 경우
+  > - 403(Forbidden)
+  >   - 상태: 서버가 해당 요청을 이해했지만, 권한이 없어 요청이 거부됨
+  >   - 예시: 사용자가 다른 사용자의 데이터 조회 요청을 하는 경우 (= 권한이 없는 요청의 경우)
+
 - **5XX: Server Error(서버 에러)**
 
   - 클라이언트의 요청은 유효한데 서버가 처리에 실패한 경우
@@ -226,3 +235,5 @@ GET /members/100?username=inpa&height=200
 [RESTful API에 대한 이해](https://velog.io/@goldbear2022/RESTful-API%EC%97%90-%EB%8C%80%ED%95%9C-%EC%9D%B4%ED%95%B4)
 
 [[웹 프로그래밍] HTTP 상태 코드 표(100 ~ 500) 전체 요약 정리](https://hongong.hanbit.co.kr/http-상태-코드-표-1xx-5xx-전체-요약-정리)
+
+[[HTTP] HTTP 상태 401(Unauthorized) vs 403(Forbidden) 차이](https://mangkyu.tistory.com/146)

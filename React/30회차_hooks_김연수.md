@@ -27,7 +27,7 @@ Hook이란, **함수형 컴포넌트에서 State와 Lifecycle 기능을 연동�
 
 '클래스형'에서는 동작하지 않으며, '함수형'에서만 사용 가능하다.  
 
-### Hook의 규칙
+## Hook의 규칙
 
 Hook에는 규칙이 있다. 이를 꼭 지켜야 정상적으로 hook이 실행되고 코드가 꼬이지 않는다.
 
@@ -49,27 +49,27 @@ Hook에는 규칙이 있다. 이를 꼭 지켜야 정상적으로 hook이 실행
 
    - hook은 위에서부터 아래로 순서에 맞게 동작한다.
 
-### Hook의 종류
+## Hook의 종류
 
 > **기본 Hook**
 >
-> 1\. useState (동적 상태 관리)  
-> 2\. useEffect (side effect 수행, 컴포넌트 렌더링 후에 발생 -mount/unmount/update )  
-> 3\. useContext (컴포넌트를 중첩하지 않고도 전역 값 쉽게 관리)  
+> 1\. [useState](https://github.com/FrontCS-Study/CS-Study/blob/main/React/30%ED%9A%8C%EC%B0%A8_hooks_%EA%B9%80%EC%97%B0%EC%88%98.md#1-usestate)  
+> 2\. [useEffect](https://github.com/FrontCS-Study/CS-Study/blob/main/React/30%ED%9A%8C%EC%B0%A8_hooks_%EA%B9%80%EC%97%B0%EC%88%98.md#2-useeffect)  
+> 3\. [useContext](https://github.com/FrontCS-Study/CS-Study/blob/main/React/30%ED%9A%8C%EC%B0%A8_hooks_%EA%B9%80%EC%97%B0%EC%88%98.md#3-usecontext)
 >
 > **추가 Hook**
 >
-> 4\. useReducer (복잡한 컴포넌트들의 state를 관리 -분리)  
-> 5\. useMemo (연산한 값 재사용)    
-> 6\. useCallback (특정 함수 재사용)    
-> 7\. useRef (DOM선택, 컴포넌트 안에서 조회/수정할 수 있는 변수 관리)  
-> 8\. useLayoutEffect (컴포넌트 렌더링 전에 발생)  
+> 4\. [useReducer](https://github.com/FrontCS-Study/CS-Study/blob/main/React/30%ED%9A%8C%EC%B0%A8_hooks_%EA%B9%80%EC%97%B0%EC%88%98.md#4-usereducer)  
+> 5\. [useMemo](https://github.com/FrontCS-Study/CS-Study/blob/main/React/30%ED%9A%8C%EC%B0%A8_hooks_%EA%B9%80%EC%97%B0%EC%88%98.md#5-usememo)    
+> 6\. [useCallback](https://github.com/FrontCS-Study/CS-Study/blob/main/React/30%ED%9A%8C%EC%B0%A8_hooks_%EA%B9%80%EC%97%B0%EC%88%98.md#6-usecallback)    
+> 7\. [useRef](https://github.com/FrontCS-Study/CS-Study/blob/main/React/30%ED%9A%8C%EC%B0%A8_hooks_%EA%B9%80%EC%97%B0%EC%88%98.md#7-useref)  
+> 8\. [useLayoutEffect](https://github.com/FrontCS-Study/CS-Study/blob/main/React/30%ED%9A%8C%EC%B0%A8_hooks_%EA%B9%80%EC%97%B0%EC%88%98.md#8-uselayouteffect)  
 >
 > **커스텀 Hooks**
 >
-> 9\. Custom Hook
+> 9\. [Custom Hook](https://github.com/FrontCS-Study/CS-Study/blob/main/React/30%ED%9A%8C%EC%B0%A8_hooks_%EA%B9%80%EC%97%B0%EC%88%98.md#9-custom-hook)
 
-#### 1. useState
+### 1. useState
 
 useState는 가장 기본적인 훅이며, **상태를 관리**하는 훅이다.
 
@@ -83,7 +83,7 @@ useState는 가장 기본적인 훅이며, **상태를 관리**하는 훅이다.
 const [count, setCount] = useState(1); 
 ```
 
-#### 2. useEffect
+### 2. useEffect
 
 useEffect는 리액트 컴포넌트가 **리렌더링 될 때마다 특정한 작업**을 수행하도록 설정할 수 있게 하는 훅이다.  
 컴포넌트가 렌더링 되고 화면에 **layout 배치와 paint 후에 비동기적으로 실행**한다.
@@ -117,7 +117,7 @@ useEffect(() => {
 */
 ```
 
-#### 3. useContext
+### 3. useContext
 
 useContext는 프로젝트 내에서 **전역적으로 사용되는 데이터를 여러 컴포넌트에서 사용**할 수 있도록 도와주는 기능을 제공하는 훅이다.
 
@@ -147,14 +147,14 @@ const UseContextExample = () => {
 }
 ```
 
-#### 4. useReducer
+### 4. useReducer
 
 useReducer는 컴포넌트의 **상태값을 리덕스의 리듀서 처럼 관리** 하는 훅이다.  
 
 Reducer는 현재 상태와 업데이트를 위해 필요한 정보를 담은 action 값을 받아 새로운 상태를 반환해주는 함수이다.  
 useReducer는 데이터의 흐름이 리덕스와 같은 방식으로 state를 직접 업데이트 하지 않고 dispatch action 을 통해 관리한다.
 
-#### 5. useMemo
+### 5. useMemo
 
 useMemo는 기존에 수행한 연산의 결과 값을 어딘가에 저장해주고 동일한 입력이 들어오면 **기존 값을 재사용**하는 훅이다.  
 이전 값을 기억해 **성능을 최적화하는 용도**로 사용한다.
@@ -165,8 +165,8 @@ useState 훅을 사용하면 state가 수정될 때마다 setState 함수가 반
 
 ```react
 // useMemo(콜백함수, 의존성배열)
-const value = useMemo(() => { 
-    return calculate(); 
+const value = useMemo(() => { 
+    return calculate(); 
 }. [item]);
 ```
 
@@ -182,7 +182,7 @@ const value = useMemo(() => {
 >
 > 주로 '같은 props로 렌더링이 자주일어나는 컴포넌트','렌더링에 리소스 소모가 큰 컴포넌트'에 사용된다.
 
-#### 6. useCallback
+### 6. useCallback
 
 useCallback은 함수가 바뀔경우에만 리렌더링이 되어, 특정 함수를 새로 만들지 않고 **함수를 재사용**하고 싶을 때 사용한다.  
 이전 함수를 기억해 **성능을 최적화하는 용도**로 사용한다.
@@ -207,7 +207,7 @@ const App =()=>{
 }
 ```
 
-#### 7. useRef
+### 7. useRef
 
 useRef는 **특정 DOM에 접근**하여 DOM의 조작을가능하게 하는 훅이다.
 
@@ -236,7 +236,7 @@ function App() {
 }
 ```
 
-#### 8. useLayoutEffect
+### 8. useLayoutEffect
 
 useLayoutEffect는 useEffect와 동일하지만, 렌더링 후 **layout 배치와 paint 전에** **비동기적**으로 실행되는 훅이다.
 
@@ -254,7 +254,7 @@ useLayoutEffect(() => {
 */
 ```
 
-#### 9. Custom Hook
+### 9. Custom Hook
 
 Custom Hook은 위의 useState와 useEffect들과 같이, 특정 상태관리나 라이프사이클 로직들을 추상화하여 묶어서 재사용이 가능하도록 제작이 가능한 함수를 뜻한다.
 
@@ -264,8 +264,8 @@ Custom Hook은 위의 useState와 useEffect들과 같이, 특정 상태관리나
 
 > 💡**useEffect, useLayoutEffect 차이**  
 >
-> useEffect의 이펙트는 DOM이 화면에 그려진 이후에 호출된다.  
-> useLayoutEffect의 이펙트는 DOM이 화면에 그려지기 전에 호출된다.
+> - useEffect의 이펙트는 DOM이 화면에 그려진 이후에 호출된다.  
+> - useLayoutEffect의 이펙트는 DOM이 화면에 그려지기 전에 호출된다.
 >
 > 따라서 렌더링할 상태가 이펙트 내에서 초기화되어야 할 경우, 사용자 경험을 위해 useLayoutEffect를 활용을 하는게 좋다.
 
@@ -278,6 +278,16 @@ Custom Hook은 위의 useState와 useEffect들과 같이, 특정 상태관리나
 > - React.memo는 HOC이고, useMemo와 useCallback은 hook이다.
 > - React.memo는 HOC이기 때문에 클래스형 컴포넌트, 함수형 컴포넌트 모두 사용 가능하지만, useMemo는 hook이기 때문에 함수형 컴포넌트 안에서만 사용 가능하다.
 > - useMemo는 메모이제이션된 값을 반환하여 값을 재사용하는 목적이고, useCallback은  메모이제이션된 함수를 반환하여 함수가 재생성 되는것을 방지하기 위한 목적이다.
+
+> 💡 **언제 useState 대신 useRef를 쓸 수 있을까?**
+>
+> - useRef는 구성요소가 변경될 때 재렌더를 트리거하지 않아야 하는 값을 저장해야 할 때 사용해야 한다.
+>   - ex) DOM 노드에 대한 참조 또는 자주 업데이트되지만 구성 요소의 모양에는 영향을 미치지 않는 값을 저장할 때
+>
+> - useState는 구성 요소가 변경될 때 다시 렌더링을 트리거해야 하는 값을 저장해야 할 때 사용해야 한다.
+>   - ex) 화면에 일부 내용을 표시하는 데 사용되는 값이나 양식 입력의 현재 값을 저장할 때
+>
+> 따라서 **화면의 일부 내용을 표시하지 않는 경우, 렌더링에 영향을 받지 않아도 되는 경우**에 useRef를 사용한다면 리렌더링을 조금 더 효율적으로 핸들링할 수 있다.
 
 <br>
 

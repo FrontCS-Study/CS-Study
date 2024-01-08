@@ -3,7 +3,7 @@
 ## RULE
 1. 월 / 목 16:30 모임
 2. 3인 1주제 선택 (https://github.com/junh0328/prepare_frontend_interview/tree/main)
-   - 주제: CS > JavaScript > React > 자료구조 > HTML/CSS
+   - 주제: CS > JavaScript > React > HTML/CSS
    - 주제 안의 순서는 랜덤
    - 주제 선택: 스터디 끝나고 바로 선정
 3. 각 정리 내용 md 업로드 (당일 오후 12시까지 업로드)
@@ -61,8 +61,15 @@
 | 30회차 | 231218  |         hooks (+useLayoutEffect)              |    🔥    |    🔥    |    🔥    |
 | 31회차 | 231221  |         SPA, SSR, CSR, SEO                    |    🔥    |    🔥    |    🔥    |
 | 32회차 | 240102  |  Next.js(하이드레이션, 렌더링 수행 방식, 사전 렌더링)   |    🔥    |    🔥    |    🔥    |
-| 33회차 | 240104  |     웹 성능 최적화 방법 (Suspense, LCP, FCP)       |          |          |          |
-  
+| 33회차 | 240104  |     웹 성능 최적화 방법 (Suspense, LCP, FCP)       |    🔥    |    🔥    |    🔥    |
+
+
+### HTML/CSS
+|  회차  |  날짜  |                     내용                         |   정현   |   연수   |   아현   |
+| :----: | :----: | :-------------------------------------------: |  :--:   |  :--:   |   :--:  |
+| 34회차 | 240108  |                 DOCTYPE                       |         |         |         |
+
+
 ---
 <details>
   <summary>
@@ -134,10 +141,10 @@
 |            |                    하이드레이션                                 |     🔥    |
 |            |                    Next의 렌더링 수행 방식                       |     🔥    |
 |            |                    사전 렌더링                                 |     🔥    |
-|            |                    Suspense                                 |            |
-|            |                    웹 성능 최적화                               |           |
-|            |                    LCP                                       |           |
-|            |                    FCP                                       |           |
+|            |                    Suspense                                 |     🔥     |
+|            |                    웹 성능 최적화                               |    🔥      |
+|            |                    LCP                                       |    🔥      |
+|            |                    FCP                                       |    🔥      |
 |    HTML    |                    DOCTYPE                                   |           |
 |            |                    웹 표준 및 웹 접근성                          |           |
 |            |                    SVG란 ?                                   |           |

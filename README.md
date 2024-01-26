@@ -153,7 +153,7 @@
 |    CSS     |                    display                                   |           |
 |            |                    position                                  |           |
 |            |                    float                                     |           |
-|            |                    Fexbod, Grid                              |           |
+|            |                    Flexbox, Grid                              |           |
 |            |              이미지 태그를 스타일로 대체하는 법                       |           |
 |            |                      반응형 웹의 3요소                           |           |
 |            |                    CSS Select의 작동 원리                       |           |

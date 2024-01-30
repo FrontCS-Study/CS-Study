@@ -19,6 +19,14 @@ CSS레이아웃에 사용되는 기술은 다음과 같다.
 
 normal flow란 보통 흐름을 뜻하며, 페이지 레이아웃을 제어하지 않았을 경우 브라우저가 요소들을 기본 값으로 배치하는 것을 의미한다.
 
+```html
+<h1>Basic document flow</h1>
+<p>
+  I am a basic block level element. My adjacent block level elements sit on new
+  lines below me.
+</p>
+```
+
 ## display 속성
 
 CSS **`display`** 속성은 플로우 레이아웃 내에서 요소가 블록 레벨과 인라인 요소 중 어느 것으로 참여해야 하는지, 그리고 요소 자신의 내부 레이아웃은 플로우, 플렉스, 그리드 등의 종류 중 어느 것이어야 하는지 설정한다.
@@ -74,6 +82,8 @@ float를 사용하면 normal flow 속에 해당 요소와 해당 요소를 뒤�
 float된 요소는 페이지의 흐름의 일부가 되어 주변 콘텐츠의 위치에 영향을 준다.  
 (페이지의 흐름에서 제거되는 position: absolute 요소와 다르다.)
 
+**float: (none, left, right, inline-start, inline-end)**
+
 주로 이미지 주변에 텍스트를 감싸기 위해 만들어진 프로퍼티이다.
 
 <div align="center">
@@ -87,6 +97,8 @@ float된 요소는 페이지의 흐름의 일부가 되어 주변 콘텐츠의 �
 
 포지셔닝(positioning)은 normal flow에 요소를 기존의 배치 위치에서 벗어나 다른 위치로 이동시킬 수 있는 기술이다.  
 포지셔닝이 레이아웃과 차이점은 레이아웃을 생성하는 것이 아닌 특정 요소의 위치를 관리하고 조정한다는 것이다.
+
+**position : (static, relative, absolute, fixed, sticky)**
 
 포지셔닝은 position 속성을 사용하며, 다음과 같이 5가지 포지션 유형이 있다.
 
@@ -140,6 +152,8 @@ float된 요소는 페이지의 흐름의 일부가 되어 주변 콘텐츠의 �
 
 muliple column layout은 다단 레이아웃으로 불리며 단 형태로 나타나는 레이아웃이다.
 
+
+
 <div align="center">
     <figure>
       <img src="https://blog.kakaocdn.net/dn/etjsm7/btrpKmr21p9/7ZiHRKkzr0WqZWtciP1kA0/img.png" alt="float 레이아웃" width="60%">
@@ -158,6 +172,13 @@ muliple column layout은 다단 레이아웃으로 불리며 단 형태로 나�
 
 - 속성 값으로 다단의 폭을 설정한다.
 - 설정한 폭에 맞게 다단이 생성된다.
+
+```css
+/* 3열 레이아웃 적용 예시 */
+.container {
+  column-count: 3;
+}
+```
 
 <br>
 

@@ -70,7 +70,7 @@
 | 34회차 | 240111  |                 DOCTYPE                       |    🔥    |    🔥    |    🔥    |
 | 35회차 | 240118  |             웹 표준 및 웹 접근성                   |    🔥    |    🔥    |    🔥    |
 | 36회차 | 240125  |                  SVG                          |    🔥    |    🔥    |    🔥    |
-| 37회차 | 240129  |           display, flexbox/grid               |          |          |          |
+| 37회차 | 240129  |           display, flexbox/grid               |    🔥    |    🔥    |    🔥    |
 
 
 ---
@@ -151,8 +151,8 @@
 |    HTML    |                    DOCTYPE                                   |    🔥     |
 |            |                    웹 표준 및 웹 접근성                          |     🔥     |
 |            |                    SVG란 ? ( + 이미지 최적화)                    |     🔥     |
-|    CSS     |                    display                                   |           |
-|            |                    Flexbox, Grid                              |           |
+|    CSS     |                    display                                   |     🔥     |
+|            |                    Flexbox, Grid                             |     🔥     |
 |            |                    position                                  |           |
 |            |                    float                                     |           |
 |            |              이미지 태그를 스타일로 대체하는 법                       |           |

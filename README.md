@@ -1,6 +1,6 @@
 # CS-Study
 
-## RULE 
+## RULE (ver. 2)
 (🗓️ 2024.02.15 ~ 2024.02.26)
 1. 월 / 목 16:30 모임
 2. 일주일에 한 주제(CS/JavaScript/React/HTML+CSS)씩 선정하고, 각자 질문 2개씩 준비한다.
@@ -9,7 +9,7 @@
 4. 질문이 모두 종료되면 Issues에 오늘 한 질문을 올린다. ( + 답변 및 정리는 자유롭게 올릴 수 있다.)
 
 
-## RULE 
+## RULE (ver. 1)
 (🗓️ 2023.07.04 ~ 2024.02.05)
 1. 월 / 목 16:30 모임
 2. 3인 1주제 선택 (https://github.com/junh0328/prepare_frontend_interview/tree/main)
